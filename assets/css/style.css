@@ -6,44 +6,51 @@
     --txtclr: rgb(15, 13, 13);
 }
 
-.header {
-    padding: 20px;
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
+}
+
+.header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--header);
     color: var(--txtcolor);
 }
 
 .header h1 {
     display: inline-block;
-    font-size: 50px;
+    font-size: 35px;
+    padding-left: 65px;
 }
 
 .name {
     background-color: var(--accent);
     padding: 1%;
-    block-size: fit-content;
 }
 
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
 
 .header nav ul {
-    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .header nav ul li {
-    display: flex;
-    align-items: center;
-    justify-content: end;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 25px;
 }
 
 a {
-    color: var(--accent)
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: solid var(--accent);
 }
 
 body {
@@ -64,8 +71,53 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
+    background-color: var(--accent);
+    margin-right: 100px;
+    font-size: 25px;
+    padding: 1%;
 }
 
 .h2 {
     color: var(--barcol);
+    display: flex;
+    width: 20%;
+    padding-right: 2%;
+    font-size: 50px;
+    float: left;
+    margin-left: 40px;
 }
+
+.aboutme {
+    display: flex;
+    width: 75%;
+    justify-content: end;
+    border-left: solid var(--barcol);
+    padding: 1%;
+    float: right;
+}
+
+
+
+.list, 
+.studyguide,
+.placeholder {
+    border-left: solid var(--barcol);
+    width: 80%;
+    float: right;
+    padding: 2%;
+}
+
+.list {
+    
+}
+
+footer {
+    display: inline-block;
+}
+
+footer nav ul li {
+    display: inline-block;
+    border-left: solid var(--barcol);
+}
+
+
