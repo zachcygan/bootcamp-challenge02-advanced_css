@@ -1,0 +1,71 @@
+:root {
+    --background: #ffff;
+    --barcol: rgb(12, 80, 168);
+    --header: rgb(8, 49, 83);
+    --accent: rgb(20, 201, 201); 
+    --txtclr: rgb(15, 13, 13);
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    background-color: var(--header);
+    color: var(--txtcolor);
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.name {
+    background-color: var(--accent);
+    padding: 1%;
+    block-size: fit-content;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+a {
+    color: var(--accent)
+}
+
+body {
+    background-color: var(--background);
+}
+
+.me {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(../images/PortPic.JPEG);
+    background-size: cover;
+    background-position: center;
+}
+
+.me h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.h2 {
+    color: var(--barcol);
+}
