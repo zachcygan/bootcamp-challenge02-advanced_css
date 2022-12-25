@@ -79,7 +79,6 @@ body {
 .h2 {
     color: var(--barcol);
     width: 20%;
-    padding-right: 2%;
     font-size: 50px;
     float: left;
     margin-left: 40px;
