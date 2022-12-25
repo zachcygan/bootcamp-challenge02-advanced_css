@@ -90,6 +90,27 @@ body {
     margin-left: 20px;
 }
 
+h3 {
+    background-color: var(--accent);
+    width: 200px;
+}
+
+.to-do {
+    position: relative;
+    bottom: 200px;
+    left: 55px;
+    padding: 2%;
+    text-align: end;
+}
+
+.to-doc {
+    position: relative;
+    width: 200px;
+    text-align: end;
+    bottom: 240px;
+    left: 75px;
+}
+
 .aboutme {
     display: flex;
     width: 75%;
