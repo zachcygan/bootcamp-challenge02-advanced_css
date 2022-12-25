@@ -97,13 +97,14 @@ body {
 .studyguide,
 .placeholder {
     border-left: solid var(--barcol);
-    width: 80%;
+    width: 65%;
     float: right;
     padding: 2%;
+    /* padding-right: 5px; */
 }
 
-.list {
-    
+.work {
+    width: 75%;
 }
 
 footer {
@@ -121,6 +122,7 @@ footer {
 footer nav ul {
     display: flex;
     justify-content: space-around;
+    font-size: 28px;
 }
 
 footer nav ul li {
