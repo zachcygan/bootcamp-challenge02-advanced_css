@@ -38,7 +38,6 @@ body {
 .header nav ul {
     display: flex;
     justify-content: end;
-    align-items: center;
 }
 
 .header nav ul li {
@@ -79,7 +78,6 @@ body {
 
 .h2 {
     color: var(--barcol);
-    display: flex;
     width: 20%;
     padding-right: 2%;
     font-size: 50px;
@@ -95,8 +93,6 @@ body {
     padding: 1%;
     float: right;
 }
-
-
 
 .list, 
 .studyguide,
@@ -115,9 +111,24 @@ footer {
     display: inline-block;
 }
 
-footer nav ul li {
-    display: inline-block;
+.contact nav {
+    display: flex;
+    float: right;
+    justify-content: end;
     border-left: solid var(--barcol);
+    width: 75%;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav ul li {
+    display: flex;
+    float: inline-start;
+    justify-content: space-around;
+    margin-left: 50px;
 }
 
 
