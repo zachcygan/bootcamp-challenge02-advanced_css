@@ -62,20 +62,19 @@ body {
 
 .me {
     position: relative;
-    height: 800px;
+    height: 600px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url(../images/PortPic.JPEG);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .me h2 {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 10%;
     background-color: var(--accent);
-    margin-right: 100px;
     font-size: 25px;
     padding: 1%;
 }
@@ -92,7 +91,7 @@ body {
 
 h3 {
     background-color: var(--accent);
-    width: 200px;
+    width: 220px;
 }
 
 .aboutme {
@@ -112,77 +111,107 @@ h3 {
     padding: 2%;
 }
 
-.test1 {
+.label1 {
     position: relative;
-    right: 1074px;
+    right: 1332px;
     top: 550px;
 }
 
 .to-do {
     position: relative;
-    height: 50px;
+    height: 90px;
+    font-size: 40px;
+    top: 120px;
+    text-align: center;
 }
 
 .to-doc {
     position: relative;
-    bottom: 45px;
-    left: 2px;
+    top: 40px;
+    left: 20px;
+    font-size: 18px;
 }
 
-.list, 
-.studyguide,
-.placeholder {
-    /* border-left: solid var(--barcol); */
-    float: right;
-    padding: 2%;
+.section {
+    overflow: auto;
+    margin-bottom: 20px;
 }
 
-.list img {
-    border: solid 5px;
-    border-color: var(--accent);
-    width: 70%;
-    float: right;
-    opacity: 50%;
-    transition: 0.25s ease-in-out;
+.section .title {
+    width: 20%;
+    float: left;
 }
 
-.list img:hover {
-    opacity: 100%;
-}
-
-.studyguide img {
+.banner {
+    width: 100%;
     position: relative;
-    clip: rect(200px, 50px, 200px, 50px);
-
+    margin-bottom: 20px;
 }
 
-.placeholder img {
-    width: 140%;;
-    max-height: 400px;
+.banner img {
+    width: 80%;
+    border: 4px solid var(--accent);
+    margin-left: 10%;
 }
 
-.contact nav {
-    display: flex;
+.banner .tag {
+    position: absolute;
+    top: 45%;
+    left: calc(10% + 4px);
+    background-color: var(--accent);
+}
+
+.banner h3 {
+    background: var(--accent);
+}
+
+.section .content {
+    width: calc(80% - 14px);
     float: right;
-    justify-content: center;
-    display: inline-block;
-    border-left: solid var(--barcol);
-    width: 77%;
-    margin-top: 20px;
+    border-left: 4px solid var(--barcol);
+    padding-left: 10px;
 }
 
-.contact nav ul {
-    display: flex;
-    padding: 6%;
-    font-size: 20px;
+.sub-banner {
+    width: 50%;
 }
 
-.contact nav ul li {
+.sub-banner-wrapper .sub-banner:nth-child(odd) img {
+    margin-left: 20%;
+}
+
+.sub-banner-wrapper .sub-banner:nth-child(even) img { 
+    margin-left: 2%;
+}
+
+.sub-banner-wrapper .sub-banner:nth-child(odd) .tag {
+    left: calc(20% + 4px);
+}
+
+.sub-banner-wrapper .sub-banner:nth-child(even) .tag {
+    left: calc(2% + 4px);
+}
+
+.sub-banner img {
+    width: 78%;
+    margin-left: 0;
+}
+
+.sub-banner-wrapper {
     display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 75%;
-    font-size: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.conlinks {
+    list-style: none;
+}
+
+.conlinks li {
+    float: left;
+    font-size: 25px;
+    width: 25%;
+    text-align: center;
 }
 
 
