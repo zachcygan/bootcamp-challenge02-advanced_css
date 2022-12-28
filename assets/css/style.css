@@ -107,9 +107,15 @@ h3 {
 .list {
     border-left: solid var(--barcol);
     display: flex;
-    width: 80%;
+    width: 75%;
     float: right;
     padding: 2%;
+}
+
+.test1 {
+    position: relative;
+    right: 1074px;
+    top: 550px;
 }
 
 .to-do {
@@ -119,8 +125,8 @@ h3 {
 
 .to-doc {
     position: relative;
-    right: 195px;
-    top: 30px;
+    bottom: 45px;
+    left: 2px;
 }
 
 .list, 
