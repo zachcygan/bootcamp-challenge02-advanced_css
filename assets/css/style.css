@@ -2,7 +2,7 @@
     --background: #ffff;
     --barcol: rgb(12, 80, 168);
     --header: rgb(8, 49, 83);
-    --accent: rgb(20, 201, 201); 
+    --accent: rgb(28, 230, 230); 
     --txtclr: rgb(15, 13, 13);
 }
 
@@ -58,7 +58,7 @@ body {
 
 .me {
     position: relative;
-    height: 600px;
+    height: 620px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url(../images/PortPic.JPEG);
@@ -66,6 +66,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Text onto of image section of the webpage */
 .me h2 {
     position: absolute;
     bottom: 0;
@@ -75,15 +76,17 @@ body {
     padding: 1%;
 }
 
-.h2 {
-    display: flex;
-    justify-content: end;
+/* Ensures that the title on the left side of the page is floating on the right  */
+.title {
+    position: relative;
+    right: 50px;
+    text-align: end;
     color: var(--barcol);
-    width: 20%;
     font-size: 50px;
-    padding-right: 50px;
-    background-color: pink;
+    /* padding-right: 50px; */
 }
+
+
 
 h3 {
     width: 170px;
@@ -156,7 +159,7 @@ h3 {
 .section .content {
     width: calc(80% - 14px);
     float: right;
-    border-left: 4px solid var(--barcol);
+    border-left: 4px solid var(--blue);
     padding-left: 10px;
 }
 
@@ -193,6 +196,7 @@ h3 {
 
 .conlinks {
     list-style: none;
+    color: var(--barcol);
 }
 
 .conlinks li {
@@ -200,6 +204,7 @@ h3 {
     font-size: 25px;
     /* width: 20%; */
     text-align: center;
+    color: var(--barcol);
 }
 
 footer ul {
@@ -213,6 +218,10 @@ footer ul li {
     margin-left: 15px;
     margin-top: 25px;
     border-bottom: solid var(--accent);
+}
+
+@media screen and (max-width: 992px) {
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -241,5 +250,6 @@ footer ul li {
     }
     
 }
+
 
 
