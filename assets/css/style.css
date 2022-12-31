@@ -159,7 +159,7 @@ h3 {
 .section .content {
     width: calc(80% - 14px);
     float: right;
-    border-left: 4px solid var(--blue);
+    border-left: 4px solid var(--barcol);
     padding-left: 10px;
 }
 
@@ -175,10 +175,12 @@ h3 {
     margin-left: 2%;
 }
 
+/* Tags that show what the projects are */
 .sub-banner-wrapper .sub-banner:nth-child(odd) .tag {
     left: calc(20% + 4px);
 }
 
+/* Tags that show what the projects are */
 .sub-banner-wrapper .sub-banner:nth-child(even) .tag {
     left: calc(2% + 4px);
 }
@@ -225,12 +227,36 @@ footer ul li {
 }
 
 @media screen and (max-width: 768px) {
+    .me {
+        background-position-x: -170px;
+    }
+
+    .title {
+        position: relative;
+        right: 30px;
+        text-align: end;
+        color: var(--barcol);
+        font-size: 50px;
+    }
+    
     .sub-banner {
-        width: 75%;
+        width: 100%;
+        margin-right: 20%;
     }
 
     .tag {
-        transform: scale(.5);
+        transform: scale(.7);
+    }
+
+    .sub-banner-wrapper .sub-banner:nth-child(odd) .tag {
+        left: calc(20% + 4px);
+        position: absolute;
+        left: 1px;
+    }
+
+    .sub-banner-wrapper .sub-banner:nth-child(even) .tag {
+        position: absolute;
+        left: 1px;
     }
 
     .sub-banner-wrapper .sub-banner:nth-child(odd) img {
