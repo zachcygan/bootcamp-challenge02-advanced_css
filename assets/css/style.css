@@ -146,7 +146,20 @@ h3 {
     left: calc(10% + 4px);
     background-color: var(--accent);
     text-align: center;
+    height: 70px;
 }
+
+.banner .tag h3 {
+    position: relative;
+    bottom: 20px;
+}
+
+.banner .tag p {
+    position: relative;
+    bottom: 45px;
+}
+
+
 
 .banner h3 {
     background: var(--accent);
@@ -222,7 +235,10 @@ footer ul li {
     border-bottom: solid var(--accent);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 980px) {
+    .tag {
+        transform: scale(.8);
+    }
     
 }
 
@@ -259,6 +275,7 @@ footer ul li {
         left: 1px;
     }
 
+    /* Aligns the sub-banner projects */
     .sub-banner-wrapper .sub-banner:nth-child(odd) img {
         margin-left: 25%;
     }
@@ -273,6 +290,13 @@ footer ul li {
     
     .sub-banner-wrapper .sub-banner:nth-child(even) .tag {
         /* left: calc(2% + 4px); */
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    .banner {
+        margin-bottom: 90px;
     }
     
 }
