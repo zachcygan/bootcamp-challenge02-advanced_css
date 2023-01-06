@@ -2,7 +2,7 @@
 
 ## Description
 
-My motivation for building this portfolio page is to host all my completed projects for employers to view. It was built using HTML for the content and css to style the content. The webpage is simple and features an About me section, followed by the completed projects, and finished by links to contact me or even see what music I am listening too!
+My motivation for building this portfolio page is to host all my completed projects for employers to view. It was built using HTML for the content and css to style the content. The webpage is simple and features an About me section, followed by the completed projects, and finished by links to contact me or even see what music I am listening too! The header navigation menu will navigate to the given section when clicked.
 
 ## Installation
 
