@@ -246,7 +246,7 @@ footer ul li {
 
 @media screen and (max-width: 980px) {
     .tag {
-        transform: scale(.8);
+        transform: scale(.65);
     }
     
 }
