@@ -10,7 +10,8 @@ The webpage is available at https://zachcygan.github.io/bootcamp-challenge02-adv
 
 Screenshots of the finished webpage are shown below:
 
-![screenshot of the website](assets/images/screenshot.png)
 ![screenshot of the website](assets/images/screenshot1.png)
+![screenshot of the website](assets/images/screenshot2.png)
+![screenshot of the website](assets/images/screenshot3.png)
     
 
