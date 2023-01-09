@@ -87,18 +87,20 @@ body {
 }
 
 
-
+/* Edits all headers inside the work tags */
 h3 {
     width: 170px;
     font-weight: bold;
     font-size: 25px;
 }
 
+/* Edits the subtext under the work tags */
 .text {
     position: relative;
     bottom: 20px;
     right: 10px;
 }
+
 
 .aboutme {
     display: flex;
@@ -109,11 +111,13 @@ h3 {
     float: right;
 }
 
+/* sets the overflow and adds bottom margin for each section */
 .section {
     overflow: auto;
     margin-bottom: 20px;
 }
 
+/* Styles the section headers */
 .section .title {
     width: 20%;
     float: left;
@@ -121,6 +125,7 @@ h3 {
     font-size: 25px;
 }
 
+/* Styles the project banners */
 .banner {
     width: 100%;
     position: relative;
@@ -128,10 +133,12 @@ h3 {
     text-decoration: none;
 }
 
+/* Styles the project banners when the cursor is hovering */
 .banner img:hover {
     opacity: 100%;
 }
 
+/* Styles the image for each banner */
 .banner img {
     width: 80%;
     border: 4px solid var(--accent);
@@ -140,6 +147,7 @@ h3 {
     transition: 0.25s ease-out;
 }
 
+/* Styles the tag for each project */
 .banner .tag {
     position: absolute;
     top: 60%;
@@ -149,26 +157,24 @@ h3 {
     height: 70px;
 }
 
+/* adds margin to tags */
 .banner .tag h3 {
     position: relative;
     bottom: 20px;
 }
 
+/* styles the subtext for each tag */
 .banner .tag p {
     position: relative;
     bottom: 45px;
 }
 
-
-
+/* sets the background color of the tag */
 .banner h3 {
     background: var(--accent);
 }
 
-.section .content .banner a {
-    text-decoration: none;
-}
-
+/* sets the size of the content in each section */
 .section .content {
     width: calc(80% - 14px);
     float: right;
