@@ -87,18 +87,20 @@ body {
 }
 
 
-
+/* Edits all headers inside the work tags */
 h3 {
     width: 170px;
     font-weight: bold;
     font-size: 22px;
 }
 
+/* Edits the subtext under the work tags */
 .text {
     position: relative;
     bottom: 20px;
     right: 10px;
 }
+
 
 .aboutme {
     display: flex;
@@ -109,11 +111,13 @@ h3 {
     float: right;
 }
 
+/* sets the overflow and adds bottom margin for each section */
 .section {
     overflow: auto;
     margin-bottom: 20px;
 }
 
+/* Styles the section headers */
 .section .title {
     width: 20%;
     float: left;
@@ -121,6 +125,7 @@ h3 {
     font-size: 25px;
 }
 
+/* Styles the project banners */
 .banner {
     width: 100%;
     position: relative;
@@ -128,10 +133,12 @@ h3 {
     text-decoration: none;
 }
 
+/* Styles the project banners when the cursor is hovering */
 .banner img:hover {
     opacity: 100%;
 }
 
+/* Styles the image for each banner */
 .banner img {
     width: 80%;
     border: 4px solid var(--accent);
@@ -140,6 +147,7 @@ h3 {
     transition: 0.25s ease-out;
 }
 
+/* Styles the tag for each project */
 .banner .tag {
     position: absolute;
     top: 60%;
@@ -149,37 +157,42 @@ h3 {
     height: 70px;
 }
 
+/* adds margin to tags */
 .banner .tag h3 {
     position: relative;
     bottom: 20px;
 }
 
+/* styles the subtext for each tag */
 .banner .tag p {
     position: relative;
     bottom: 45px;
 }
 
-
-
+/* sets the background color of the tag */
 .banner h3 {
     background: var(--accent);
 }
 
-.section .content .banner a {
-    text-decoration: none;
-}
-
+/* sets the size of the content in each section */
 .section .content {
     width: calc(80% - 14px);
     float: right;
     border-left: 4px solid var(--barcol);
     padding-left: 10px;
 }
-
+/* styles the sub banners, the smaller project banners */
 .sub-banner {
     width: 50%;
 }
 
+/* sets the display to flex for the sub banners */
+.sub-banner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sets the margin for sub banners to align them */
 .sub-banner-wrapper .sub-banner:nth-child(odd) img {
     margin-left: 20%;
 }
@@ -188,46 +201,42 @@ h3 {
     margin-left: 2%;
 }
 
-/* Tags that show what the projects are */
+/* Moves the tags of the sub banners */
 .sub-banner-wrapper .sub-banner:nth-child(odd) .tag {
     left: calc(20% + 4px);
 }
 
-/* Tags that show what the projects are */
+
 .sub-banner-wrapper .sub-banner:nth-child(even) .tag {
     left: calc(2% + 4px);
 }
 
+/* sets the size of the subbanner img */
 .sub-banner img {
     width: 78%;
     margin-left: 0;
 }
 
-.sub-banner-wrapper {
-    display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
-}
-
+/* Styles the contact links at the bottom of the page */
 .conlinks {
     list-style: none;
     color: var(--barcol);
 }
 
+/* Styles the links in the footer */
 .conlinks li {
-    float: left;
     font-size: 25px;
-    /* width: 20%; */
     text-align: center;
-    color: var(--barcol);
 }
 
+/* Styles the footer */
 footer ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
+/* styles footer */
 footer ul li {
     display: inline-block;
     margin-left: 15px;
@@ -283,22 +292,20 @@ footer ul li {
     .sub-banner-wrapper .sub-banner:nth-child(even) img { 
         margin-left: 25%;
     }
-    
-    .sub-banner-wrapper .sub-banner:nth-child(odd) .tag {
-        /* left: calc(20% + 4px); */
-    }
-    
-    .sub-banner-wrapper .sub-banner:nth-child(even) .tag {
-        /* left: calc(2% + 4px); */
-    }
-    
 }
 
 @media screen and (max-width: 430px) {
     .banner {
         margin-bottom: 90px;
     }
-    
+
+    .me {
+        background-position-x: -190px;
+    }
+
+    .header {
+        min-height: 200px;
+    }
 }
 
 
